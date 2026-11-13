@@ -1,0 +1,174 @@
+/* Reseteig bàsic i tipografia */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f7f9fa;
+  color: #333;
+  padding: 20px;
+}
+
+.main-container,
+.detail-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Selector superior */
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.custom-select {
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Graella de targetes centrada */
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  border: 1px solid #ccc;
+  padding: 25px 15px;
+  background-color: #fff;
+  border-radius: 4px;
+  min-height: 250px;
+}
+
+/* Mida fixa per a cada targeta perquè mantinguin la mateixa amplada */
+.card {
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+}
+
+.card-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.card-name {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin: 10px 0;
+}
+
+.detail-btn,
+.action-btn,
+.nav-btn {
+  background-color: #f0f0f0;
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.detail-btn:hover,
+.action-btn:hover,
+.nav-btn:hover:not(:disabled) {
+  background-color: #e2e2e2;
+}
+
+/* Paginació */
+.pagination-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.nav-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Estils de la pàgina de detall */
+.detail-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+}
+
+.detail-name {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  margin: 10px 0 5px;
+}
+
+.detail-specs {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* Taula d'habilitats */
+.skills-table {
+  width: 100%;
+  max-width: 350px;
+  border-collapse: collapse;
+  margin: 10px auto;
+}
+
+.skills-table th,
+.skills-table td {
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.skills-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.skills-table td {
+  text-transform: capitalize;
+}
+
+.back-action {
+  margin-top: 10px;
+}

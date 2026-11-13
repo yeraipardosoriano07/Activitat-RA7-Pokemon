@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon API</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
+
+  <main class="main-container">
+    <h1 class="title">Pokémon API</h1>
+
+    <!-- Selector de quantitat de resultats -->
+    <div class="filter-group">
+      <label for="limit-select">Numero de resultats</label>
+      <select id="limit-select" class="custom-select">
+        <option value="10" selected>10</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+      </select>
+    </div>
+
+    <!-- Contenidor per injectar les cards amb document.createElement -->
+    <div id="pokemon-grid" class="cards-grid"></div>
+
+    <!-- Botons de paginació -->
+    <div class="pagination-group">
+      <button id="prev-btn" class="nav-btn" disabled>Prev</button>
+      <button id="next-btn" class="nav-btn">Next</button>
+    </div>
+  </main>
+</body>
+</html>
